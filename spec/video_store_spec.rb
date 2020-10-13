@@ -8,7 +8,7 @@ describe VideoStore do
             #Act
             receipt = <<~RECEIPT
                 Rental Record for 
-                  
+                \s\s
                 You owe 0.0
                 You earned 0 frequent renter points
                 RECEIPT
@@ -23,7 +23,7 @@ describe VideoStore do
             #Act
             receipt = <<~RECEIPT
                 Rental Record for Bella
-                  
+                \s\s
                 You owe 0.0
                 You earned 0 frequent renter points
                 RECEIPT
@@ -38,7 +38,7 @@ describe VideoStore do
             #Act
             receipt = <<~RECEIPT
                 Rental Record for Bella
-                  Bob the Builder 0.0
+                \s\sBob the Builder 0.0
                 You owe 0.0
                 You earned 0 frequent renter points
                 RECEIPT
